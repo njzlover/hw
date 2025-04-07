@@ -1,0 +1,52 @@
+#포함 <stdio.h>
+#포함 <string.h>
+
+#MAX_SKIL_LENGTH 100 정의
+#MAX_소개_길이 200 정의
+
+typdef 구조 {
+ 문자 이름[50];
+ 성별 [10];
+ 차 메이저[50];
+ 경력직;
+ 캐릭터 역할[50];
+ 캐릭터 스킬 [5]MAX_SKIL_LENGTH];
+ 문자 소개MAX_소개_길이];
+} 프로젝트 구성원;
+
+주 () {int}
+ ProjectMember members[2]; // 멤버 수를 2로 설정 (아서 덴트, 김영진)
+
+ // 아서 덴트 정보 입력
+ strcpy(members[0].name, "아서 덴트");
+ strcpy(멤버[0].gender, "남");
+ strcpy(members[0].major, "기계 공학");
+ 회원[0].career = 15;
+ strcpy(멤버[0].역할, "아키텍트");
+ strcpy(멤버[0]).기술[0], "C/C++";
+ strcpy(멤버[0]).기술[1], "자바";
+ strcpy(멤버[0]).기술[2], "스프링";
+ strcpy(멤버[0]).기술[3], "파이썬";
+ strcpy(멤버[0]).skills[4], "머신러닝/딥러닝");
+ strcpy(멤버[0]).introduction, "실리콘 밸리에서 SNS, 핀테크, HR, 미디어 등의 다양한 프로젝트에 참여하며 경력을 쌓았습니다. 성공과 실패를 겪으며 얻게 된 깨달음을 여러분과 나누고 싶습니다.");
+
+ // 김영진 정보 입력 (나머지 정보는 생략되어 있음)
+ strcpy(멤버[1].name, "김영진");
+ strcpy(멤버[1].gender, "남");
+ // ... 나머지 정보 입력 ...
+
+ // 멤버 정보 출력 (아서 덴트 정보만 출력)
+ printf ("이름: %s\\n", members [0.name];
+ printf ("성별: %s\\n", 멤버[0.gender);
+ printf ("전공: %s\\n", members [0.major];
+ printf ("경력: %d 년\\n", 멤버 [0.career);
+ printf ("역할: %s\\n", 멤버[0.역할);
+ printf ("기술: ";
+ (int i = 0; i < 5; i++) {에 대해
+ printf ("%s, "members[0].기술[i];
+ }
+ printf ("\n소개: %s\n", 회원 [0].소개);
+
+ 0을 반환합니다;
+}
+ 
